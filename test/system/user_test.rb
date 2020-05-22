@@ -46,7 +46,7 @@ class UserTest < ApplicationSystemTestCase
   end
 
   test "success to visit about page" do
-    visit about_url
+    visit static_pages_about_url
     assert_text "StaticPages#about"
   end
 
