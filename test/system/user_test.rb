@@ -34,12 +34,10 @@ class UserTest < ApplicationSystemTestCase
     fill_in "Password", with: "foobar"
     fill_in "Confirmation", with: "foobar"
     click_button "Create my account"
-    # TODO: エラーメッセージが出ているようです
     assert_text "Signup success!"
     assert_text "Another User"
   end
 
-  # TODO: NoMethodError: undefined method `log_in' for #<SessionsController:0x00007fb0e81fb058>
   test "logout success" do
     login
     click_on "Account"
@@ -47,7 +45,6 @@ class UserTest < ApplicationSystemTestCase
     assert_text "Log in"
   end
 
-  # TODO: NameError: undefined local variable or method `about_url' for #<UserTest:0x00007fb0e2644e58>
   test "success to visit about page" do
     visit about_url
     assert_text "StaticPages#about"
