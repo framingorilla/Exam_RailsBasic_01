@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'users/show'
   get 'users/create'
   get 'static_pages/top'
-  get 'static_pages/about'
+  get '/about', to: 'static_pages#about'
   get    '/signup',  to: 'users#new'
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
