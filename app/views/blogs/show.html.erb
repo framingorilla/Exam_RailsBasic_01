@@ -27,5 +27,5 @@
   <%= render 'comments/form', blog: @blog %>
 </p>
 
-<%= link_to 'Edit', blog_path(@blog.id) %>
+<%= link_to 'Edit', edit_blog_path(@blog.id) %>
 <%= link_to 'Back', blogs_path %>
