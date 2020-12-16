@@ -57,4 +57,3 @@ class UserTest < ApplicationSystemTestCase
     click_button "Log in"
   end
 end
-
