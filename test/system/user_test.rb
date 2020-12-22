@@ -3,7 +3,7 @@ require "application_system_test_case"
 
 class UserTest < ApplicationSystemTestCase
   # switch to display Browser
-  driven_by :selenium, using: :headless_chrome
+  driven_by :selenium, using: :headless_chrome, options: { args: ["headless", "disable-gpu", "no-sandbox", "disable-dev-shm-usage"] }
   # driven_by :selenium, using: :chrome
 
   def setup
